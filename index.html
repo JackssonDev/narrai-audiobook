@@ -9,41 +9,38 @@
 <body>
     <div class="container">
         <div class="music">
-            <div>
-                <img id="cover" src="imagens/dom-casmurro.jpeg" alt="Capa do livro Dom Casmurro">
+            <img id="cover" src="imagens/dom-casmurro.jpeg" alt="Capa do livro Dom Casmurro">
+
+            <audio id="chapter-audio" src="audios/1.mp3"></audio>
+
+            <div class="track-information">
+                <h2 id="chapter-title">Capítulo 1</h2>
+                <p id="name-author">Machado de Assis</p>
+                <p id="chapter-description">Uma descrição aqui</p>
             </div>
-        </div>
-    </div>
+            
+            <div class="control-buttons">
+                <button id="previous">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 6L6 18M18 6L10 12L18 18V6Z" stroke="white" stroke-width="2"/>
+                    </svg>
+                </button>
 
-    <audio id="chapter-audio" src="audios/1.mp3"></audio>
+                <button id="play-pause">
+                    <svg id="play" width="60" heidht="60" viewBox="0 0 24 24" fill="none">
+                        <path d="M8 5V19L19 12L8 5Z" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <svg id="pause" width="60" heidht="60" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 4H10V20H6V4ZM14 4H18V20H14V4Z" stroke="white" stroke-width="2"/>
+                    </svg>
+                </button>
 
-    <div class="track-information">
-        <h2 id="chapter-title">Capítulo 1</h2>
-        <p id="chapter-author">Machado de Assis</p>
-    </div>
-
-    <div class="control-buttons">
-        <button id="previous">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
-                <path d="M6 6L6 18M18 6L10 12L18 18V6Z" stroke="white" stroke-width="2"/>
-            </svg>
-        </button>
-
-        <button id="play-pause">
-            <svg id="play" width="60" heidht="60" viewBox="0 0 24 24" fill="none">
-                <path d="M8 5V19L19 12L8 5Z" stroke="white" stroke-width="2"/>
-            </svg>
-            <svg id="pause" width="60" heidht="60" viewBox="0 0 24 24" fill="none">
-                <path d="M6 4H10V20H6V4ZM14 4H18V20H14V4Z" stroke="white" stroke-width="2"/>
-            </svg>
-        </button>
-
-        <button id="next">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
-                <path d="M18 6V18M6 18L14 12L6 6V18Z" stroke="white" stroke-width="2"/>
-            </svg>
+                <button id="next">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6V18M6 18L14 12L6 6V18Z" stroke="white" stroke-width="2"/>
+                    </svg>
         
-    </div>
+        </div>
     
     <script src="script.js"></script>
 

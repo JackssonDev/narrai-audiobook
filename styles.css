@@ -28,15 +28,16 @@ body {
 }
 
 .music img {
-    border-radius: 10px;
-    width: 300px;
+    border-radius: 12px;
+    width: 280px;
+    margin-bottom: 24px;
 }
 
 .track-information {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 20px;
+    margin-bottom: 20px;
 }
 
 .track-information h2 {
@@ -44,17 +45,38 @@ body {
     font-weight: bold;
 }
 
+#name-author {
+    font-size: 1rem;
+    color: #dbe5ee;
+    margin-bottom: 5px;
+}
+
+#chapter-description {
+    font-size: 1rem;
+    color: #a0b4c8;
+    text-align: center;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
 button {
     background: none;
     border: none;
+    font-size: 2.5rem;
+    color: #fff;
     cursor: pointer;
+    transition: color 0.2s;
+}
+
+button:hover {
+    color: #8ecae6;
 }
 
 .control-buttons {
     display: flex;
+    margin-bottom: 0;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
+    gap: 16px;
 }
 
 #pause {
