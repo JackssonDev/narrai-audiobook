@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NarrAI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music">
+            <div>
+                <img id="cover" src="imagens/dom-casmurro.jpeg" alt="Capa do livro Dom Casmurro">
+            </div>
+        </div>
+    </div>
+
+    <audio id="chapter-audio" src="audios/1.mp3"></audio>
+
+    <div class="track-information">
+        <h2 id="chapter-title">Capítulo 1</h2>
+        <p id="chapter-author">Machado de Assis</p>
+    </div>
+
+    <div class="control-buttons">
+        <button id="previous">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                <path d="M6 6L6 18M18 6L10 12L18 18V6Z" stroke="white" stroke-width="2"/>
+            </svg>
+        </button>
+
+        <button id="play-pause">
+            <svg id="play" width="60" heidht="60" viewBox="0 0 24 24" fill="none">
+                <path d="M8 5V19L19 12L8 5Z" stroke="white" stroke-width="2"/>
+            </svg>
+            <svg id="pause" width="60" heidht="60" viewBox="0 0 24 24" fill="none">
+                <path d="M6 4H10V20H6V4ZM14 4H18V20H14V4Z" stroke="white" stroke-width="2"/>
+            </svg>
+        </button>
+
+        <button id="next">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                <path d="M18 6V18M6 18L14 12L6 6V18Z" stroke="white" stroke-width="2"/>
+            </svg>
+        
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
