@@ -27,13 +27,13 @@ let chapter = 1;
 
 function playTrack() {
     audio.play();
-    buttonPlayPause.classList.add('tocando');
+    buttonPlayPause.classList.add('playing');
     isPlaying = true;
 }
 
 function pauseTrack() {
     audio.pause();
-    buttonPlayPause.classList.remove('tocando');
+    buttonPlayPause.classList.remove('playing');
     isPlaying = false;
 }
 
@@ -53,7 +53,7 @@ function nextChapter() {
     }
         audio.src = './audios/' + chapter + '.mp3';
         nameChapter.innerText = 'Capítulo ' + chapter;
-        playTrack();
+        pauseTrack();
 
         updateChapterDescription();
     }
@@ -66,7 +66,7 @@ function previousChapter() {
     }
         audio.src = './audios/' + chapter + '.mp3';
         nameChapter.innerText = 'Capítulo ' + chapter;
-        playTrack();
+        pauseTrack();
 
         updateChapterDescription();
     }
