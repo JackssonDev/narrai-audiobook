@@ -1,93 +1,111 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .music {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .music img {
-    border-radius: 12px;
-    width: 280px;
-    margin-bottom: 24px;
+  border-radius: 12px;
+  width: 280px;
+  margin-bottom: 24px;
 }
 
 .track-information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .track-information h2 {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 #name-author {
-    font-size: 1rem;
-    color: #dbe5ee;
-    margin-bottom: 5px;
+  font-size: 1rem;
+  color: #dbe5ee;
+  margin-bottom: 5px;
 }
 
 #chapter-description {
-    font-size: 1rem;
-    color: #a0b4c8;
-    text-align: center;
-    max-width: 400px;
-    margin-top: 10px;
+  font-size: 1rem;
+  color: #a0b4c8;
+  text-align: center;
+  max-width: 400px;
+  margin-top: 10px;
 }
 
 button {
-    background: none;
-    border: none;
-    font-size: 2.5rem;
-    color: #fff;
-    cursor: pointer;
-    transition: color 0.2s;
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.2s;
 }
 
 button:hover {
-    color: #8ecae6;
+  color: #8ecae6;
 }
 
 .control-buttons {
-    display: flex;
-    margin-bottom: 0;
-    justify-content: center;
-    gap: 16px;
+  display: flex;
+  margin-bottom: 0;
+  justify-content: center;
+  gap: 16px;
+}
+
+#play-pause {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+#play,
+#pause {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  transition: opacity 0.2s ease;
 }
 
 #pause {
-    display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
-.tocando #pause {
-    display: block;
+.playing #pause {
+  opacity: 1;
+  visibility: visible;
 }
 
-.tocando #play {
-    display: none;
+.playing #play {
+  opacity: 0;
+  visibility: hidden;
 }
-
